@@ -33,6 +33,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- For Resource addition of related other links -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
@@ -52,7 +53,41 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- able to send request in xml format  
+			  GET/POST request Header Key- Áccept' Value - application/xml
+			  POST - Content-Type application/xml	  
+		-->
+		<dependency>
+    		<groupId>com.fasterxml.jackson.dataformat</groupId>
+    		<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+		<!-- API Documentation
+			http://localhost:8080/swagger-ui
+			http://localhost:8080/v2/api-docs
+		 -->
+		<dependency>
+    		<groupId>io.springfox</groupId>
+    		<artifactId>springfox-swagger2</artifactId>
+    		<version>2.4.0</version>
+		</dependency>
+				<dependency>
+    		<groupId>io.springfox</groupId>
+    		<artifactId>springfox-swagger-ui</artifactId>
+    		<version>2.4.0</version>
+		</dependency>
+		
+		<!-- For monitoring -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Able to display related resource links from actuator -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+		</dependency>
 	</dependencies>
+	
 
 	<build>
 		<plugins>
