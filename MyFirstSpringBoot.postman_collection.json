@@ -1,0 +1,425 @@
+{
+	"id": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+	"name": "MyFirstSpringBoot",
+	"description": "get, post and delete requests for my first spring boot applications",
+	"order": [
+		"61d11695-6c94-5db7-603c-66e9d80abfd2",
+		"fa5f1001-7221-604a-61b3-348ef4724a0f",
+		"7d6c420d-7ba3-162a-f287-d2bfc24988b3",
+		"cc89cf96-acf8-c6c5-4411-964fb9c8b98f"
+	],
+	"folders": [
+		{
+			"name": "HelloWorldInternationalized",
+			"description": "",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"order": [
+				"ff60368b-08b3-bf62-c9ba-01c67a0e863e",
+				"ab992cf6-6bf6-7a47-1930-c0939a555817",
+				"94fcbb3e-f9ac-b56c-b72c-291a404f6ad5"
+			],
+			"owner": "5148726",
+			"folders_order": [],
+			"id": "dde2d7c5-977d-346c-e561-23bdee908790"
+		},
+		{
+			"name": "Versioning",
+			"description": "",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"order": [
+				"9217f019-2d12-057f-4f20-8fdfe69b8d33",
+				"b479e24a-bb58-1b91-d2cf-e5486aa66e49",
+				"2dc55454-54ac-e4f1-8bf0-427627b2906a",
+				"b19f905c-9336-a07b-0251-7a544c47d4b4"
+			],
+			"owner": "5148726",
+			"folders_order": [],
+			"id": "2e4d600f-6542-6bde-6f0b-00214bfd2986"
+		}
+	],
+	"folders_order": [
+		"dde2d7c5-977d-346c-e561-23bdee908790",
+		"2e4d600f-6542-6bde-6f0b-00214bfd2986"
+	],
+	"timestamp": 1539176520775,
+	"owner": "5148726",
+	"public": false,
+	"requests": [
+		{
+			"id": "2dc55454-54ac-e4f1-8bf0-427627b2906a",
+			"headers": "Accept: application/json\nX-API-VERSION: 1\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-API-VERSION",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person/header",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "HeaderParamVersioning",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539177474892,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2e4d600f-6542-6bde-6f0b-00214bfd2986"
+		},
+		{
+			"id": "61d11695-6c94-5db7-603c-66e9d80abfd2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/users/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539176643298,
+			"name": "GetUsers",
+			"description": "Get All Users",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"responses": []
+		},
+		{
+			"id": "7d6c420d-7ba3-162a-f287-d2bfc24988b3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/users/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "DeleteUser",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539176805081,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9217f019-2d12-057f-4f20-8fdfe69b8d33",
+			"headers": "Accept: application/xml\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/person",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "URIVersioningV1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539177401493,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2e4d600f-6542-6bde-6f0b-00214bfd2986"
+		},
+		{
+			"id": "94fcbb3e-f9ac-b56c-b72c-291a404f6ad5",
+			"headers": "Accept-Language: us\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept-Language",
+					"value": "us",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/hello-world-internationalized",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "HelloWorldEnglish",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539176954758,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "dde2d7c5-977d-346c-e561-23bdee908790"
+		},
+		{
+			"id": "ab992cf6-6bf6-7a47-1930-c0939a555817",
+			"headers": "Accept-Language: fil\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept-Language",
+					"value": "fil",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/hello-world-internationalized",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "HelloWorldFilipino",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539176930858,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "dde2d7c5-977d-346c-e561-23bdee908790"
+		},
+		{
+			"id": "b19f905c-9336-a07b-0251-7a544c47d4b4",
+			"headers": "Accept: application/xml\n//X-API-VERSION: 1\nAccept: application/mon.company.app-v1+json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-API-VERSION",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Accept",
+					"value": "application/mon.company.app-v1+json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person/produces",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "AcceptHeaderVersioning",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539177519301,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2e4d600f-6542-6bde-6f0b-00214bfd2986"
+		},
+		{
+			"id": "b479e24a-bb58-1b91-d2cf-e5486aa66e49",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person/param?version=1",
+			"queryParams": [
+				{
+					"key": "version",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "ParamVersioning",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539177435613,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "2e4d600f-6542-6bde-6f0b-00214bfd2986"
+		},
+		{
+			"id": "cc89cf96-acf8-c6c5-4411-964fb9c8b98f",
+			"headers": "Content-Type: application/xml\nAccept: application/xml\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8082/restful-web-services-0.0.1-SNAPSHOT/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "TomcatHelloWorld",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539177039575,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "    <item>\n        <name>Klyd</name>\n        <birthdate>2018-09-15T04:17:50.402+0000</birthdate>\n    </item>"
+		},
+		{
+			"id": "fa5f1001-7221-604a-61b3-348ef4724a0f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "PostUser",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539176722817,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"name\": \"Klyd\",\n    \"birthdate\": \"2018-08-20T15:53:25.907+0000\"\n}"
+		},
+		{
+			"id": "ff60368b-08b3-bf62-c9ba-01c67a0e863e",
+			"headers": "Accept-Language: fr\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept-Language",
+					"value": "fr",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/hello-world-internationalized",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ff114474-5d80-5ef3-fc5a-4963513e0bb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "HelloWorldFrench",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1539176911854,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "ff60368b-08b3-bf62-c9ba-01c67a0e863e",
+			"folder": "dde2d7c5-977d-346c-e561-23bdee908790"
+		}
+	]
+}

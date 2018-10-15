@@ -55,7 +55,8 @@
 		</dependency>
 		<!-- able to send request in xml format  
 			  GET/POST request Header Key- Áccept' Value - application/xml
-			  POST - Content-Type application/xml	  
+			  POST - Content-Type application/xml	
+			  able to use for JsonIgnore/filtering  
 		-->
 		<dependency>
     		<groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -76,15 +77,24 @@
     		<version>2.4.0</version>
 		</dependency>
 		
-		<!-- For monitoring -->
+		<!-- For monitoring 
+			 http://localhost:8080/actuator 
+			 management.endpoints.web.exposure.include=* -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<!-- Able to display related resource links from actuator -->
+		<!-- Able to display related resource links from actuator
+			 Hal browser - http://localhost:8080 
+			 audit events - user security, failed logins-->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-rest-hal-browser</artifactId>
+		</dependency>
+		<!-- spring security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 	
